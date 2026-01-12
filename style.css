@@ -78,6 +78,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
+    background-color: cadetblue;
 }
 
 .card {
@@ -86,6 +87,7 @@ body {
     margin: auto;
     width: 500px;
     padding-bottom: 10px;
+    background-color: rgb(51, 47, 47);
 
 }
 
@@ -152,6 +154,7 @@ body {
     background-color: rgb(99, 97, 97);
     color: white;
     margin-right: 50px;
+    background-color: rgb(105, 101, 101);
 
 }
 
