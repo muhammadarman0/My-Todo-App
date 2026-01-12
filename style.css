@@ -81,15 +81,12 @@ body {
 }
 
 .card {
-    /* border: 1px solid black; */
-    width: 50%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px;
     margin: auto;
-    /* height: 80vh; */
+    width: 500px;
     padding-bottom: 10px;
-    /* padding-top: 1.2px; */
-    background-color: rgb(59, 52, 52);
+
 }
 
 .card>h1 {
@@ -103,6 +100,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    gap: 10px;
 
 }
 
@@ -113,13 +111,11 @@ body {
     border-radius: 10px;
     padding-left: 10px;
     border: 1px solid gray;
-    /* border: none; */
     outline: none;
 }
 
 .inputBox>button {
     width: 15%;
-    margin-left: 10px;
     border-radius: 10px;
     border: none;
     font-size: 17px;
@@ -129,8 +125,14 @@ body {
 }
 
 .todoList {
-  
+
     margin-top: 10px;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
 .todoList>li {
@@ -144,12 +146,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-bottom: 10px;
     padding-left: 10px;
+    width:100%px;
     border-radius: 10px;
-    width: 65%;
-    margin-left: 80px;
     padding-right: 10px;
     background-color: rgb(99, 97, 97);
     color: white;
+    margin-right: 50px;
 
 }
 
@@ -164,4 +166,26 @@ body {
 
 .fa-pen-to-square {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        width: 90%;
+    }
+
+    .card>h1{
+        font-size: 28px;
+    }
+
+    .inputBox>input {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .inputBox>button {
+        width: 25%;
+        font-size: 18px;
+        font-weight: bold;
+    }
 }
