@@ -148,7 +148,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-bottom: 10px;
     padding-left: 10px;
-    width:100%px;
+    width: 100%px;
     border-radius: 10px;
     padding-right: 10px;
     background-color: rgb(99, 97, 97);
@@ -171,13 +171,29 @@ body {
     cursor: pointer;
 }
 
+.btnDel>button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btnDel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 600px) {
 
     .card {
         width: 90%;
     }
 
-    .card>h1{
+    .card>h1 {
         font-size: 28px;
     }
 
