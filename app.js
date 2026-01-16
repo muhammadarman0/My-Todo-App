@@ -6,6 +6,8 @@ let todolist = document.getElementById("ul_list")
 
 let del = document.getElementById("delBtn")
 
+let y = null;
+
 
 function errorAlert(message) {
     Swal.fire({
@@ -18,6 +20,11 @@ function errorAlert(message) {
 
 function additmes() {
 
+
+    if (input.value !== y) {
+        console.log(input.value);
+
+    }
     if (input.value.trim() === "") {
         // alert("Please enter a task")
         errorAlert("Please enter a task!")
@@ -34,18 +41,17 @@ function additmes() {
     input.value = ""
 }
 
+
 function delAll() {
     if (todolist.children.length == 0) {
-        errorAlert("Kuch bhi")
-        return;
+        errorAlert("No Task to Delete")
+        return
     }
-    console.log(todolist.children.length);
+
     for (let i = 0; i < todolist.children.length; i++) {
-
         todolist.children[i].remove()
-        --i
+        i--;
     }
-
 }
 
 function deleteItem(e) {
@@ -53,9 +59,10 @@ function deleteItem(e) {
 }
 
 function editItem(e) {
-    input.value = e.parentElement.parentElement.parentElement.firstChild.textContent.trim();
-    e.parentElement.parentElement.parentElement.remove();
-
+    let v = e.parentElement.parentElement.parentElement.firstChild.textContent.trim();
+    input.value = v
+    y = v
+e.parentElement.parentElement.parentElement.remove()
 
 }
 
